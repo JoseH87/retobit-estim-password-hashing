@@ -1,10 +1,13 @@
 package dev.marshallBits.estim.services;
 
 import dev.marshallBits.estim.dto.CreateUserDTO;
-import dev.marshallBits.estim.models.User;
+import dev.marshallBits.estim.dto.SignupResponseDTO;
+
 
 public interface UserService {
 
-    User registerUser(CreateUserDTO createUserDTO);
-
+    SignupResponseDTO registerUser(CreateUserDTO createUserDTO);
+    //SignupResponseDTO registerUserWithoutPassword(CreateUserDTO createUserDTO);
 }
+
+
